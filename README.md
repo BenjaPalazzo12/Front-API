@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# API de Redes Sociales
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta API de redes sociales es una aplicación web que permite a los usuarios registrarse, publicar contenido, interactuar con publicaciones de otros usuarios y más. Es un proyecto en desarrollo y está diseñado para servir como una base para desarrollar aplicaciones de redes sociales.
 
-## Available Scripts
+## Tabla de Contenidos
 
-In the project directory, you can run:
+- [Características](#características)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Ejemplos de Endpoints](#ejemplos-de-endpoints)
+- [Contribución](#contribución)
+- [Licencia](#licencia)
 
-### `npm start`
+## Características
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Registro de usuarios
+- Publicación de contenido (publicaciones)
+- Comentarios en publicaciones
+- Likes en publicaciones
+- Compartir publicaciones
+- Actualización de información de perfil de usuario
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologías Utilizadas
 
-### `npm test`
+- Node.js
+- Express.js
+- Sequelize (ORM para bases de datos)
+- PostgreSQL (Base de Datos)
+- Autenticación y Autorización (JWT u otros métodos)
+- Otros módulos y bibliotecas según sea necesario
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalación
 
-### `npm run build`
+1. Clona el repositorio:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/TuUsuario/API-Redes.git
+   cd API-Redes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Instala las dependencias:
+    ```bash
+    npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Configura las variables de entorno en un archivo .env:
+    DATABASE_URL=postgres://tuusuario:tucontraseña@localhost:5432/tubasededatos
+    SECRET_KEY=tusecretkey  
 
-### `npm run eject`
+4. Ejecuta la aplicación:
+    npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Uso
+La API se ejecuta en http://localhost:3000 de forma predeterminada, pero puedes cambiar el puerto en el archivo de configuración si es necesario. Consulta la documentación de la API para obtener detalles sobre cómo usar cada endpoint.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Ejemplos de Endpoints
+- /users: Obtener la lista de usuarios.
+- /posts: Obtener la lista de publicaciones.
+- /comments: Obtener la lista de comentarios.
+- /likes: Obtener la lista de likes.
+- /shares: Obtener la lista de publicaciones compartidas.
+- /register: Registrarse como nuevo usuario.
+- /login: Iniciar sesión como usuario.
+- Y más endpoints específicos para cada característica
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribución
+Si deseas contribuir al desarrollo de esta API, sigue estos pasos:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Haz un fork del repositorio.
+2. Crea una rama para tu contribución: git checkout -b feature/nueva-funcionalidad.
+3. Realiza tus cambios y haz commit: git commit -m 'Añadir nueva funcionalidad'.
+4. Sube tus cambios: git push origin feature/nueva-funcionalidad.
+5. Abre una solicitud de extracción en GitHub.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licencia
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles.
